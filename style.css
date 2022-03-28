@@ -1,0 +1,9 @@
+body{
+    background: gray;
+    font-family: 'papyrus', fantasy;
+    text-align: center;
+}
+button{
+    display: flex;
+    justify-content: space-around;
+}
