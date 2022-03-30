@@ -6,4 +6,11 @@ body{
 button{
     display: flex;
     justify-content: space-around;
+    border-radius: 0.6em;
+}
+div{
+    display: block;
+}
+h3{
+    display: block;
 }
