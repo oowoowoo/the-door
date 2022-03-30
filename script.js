@@ -45,9 +45,21 @@ window.onload = function(){
             ]
         },
         work: {
+            text: 'Although he was nervous, Albert was excited to learn the secret of the closet. Finally, after about three years of waiting and wondering, he was going to know. It’s a feat that the company was able to keep this secret under wraps for so long, only now allowing a new person into the mix. Maybe it was a good thing that he had no friends, considering he would now have nobody to run to with whatever information was in this closet.',
+            choices: [
+                ['Continue working', 'work']
+            ]
+        },
+        work: {
+            text: 'During his work, Albert could feel a strange sensation at the nape of his neck. He had hoped to play it off as nerves, or maybe the thrill of new prospects, but this was an all too familiar feeling. The feeling of somebody watching him, boring their eyes into his back',
+            choices: [
+                ['Turn around', 'turn'], ['Dont turn around', 'turn']
+            ]
+        },
+        turn: {
             text: '',
             choices: [
-
+                
             ]
         }
     }
