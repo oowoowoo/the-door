@@ -8,6 +8,9 @@ button{
     justify-content: space-around;
     border-radius: 0.6em;
 }
+#branch1{
+    margin-left: 40%;
+}
 div{
     display: block;
 }
