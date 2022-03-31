@@ -8,7 +8,19 @@ button{
     justify-content: space-around;
     border-radius: 0.6em;
 }
+button:hover
+{
+    color: rgb(37, 153, 255);
+    transition: 0.50s;
+    border: 3px;
+}
 #branch1{
+    margin-left: 40%;
+}
+#branch2{
+    margin-left: 40%;
+}
+#workbutton{
     margin-left: 40%;
 }
 div{
