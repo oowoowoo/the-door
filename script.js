@@ -10,7 +10,6 @@ window.onload = function(){
                 ['Sneak into the closet', 'sneakFail'], ['Keep working', 'sneakFail'],
             ],
         },
-        
         sneakFail: {
             text: 'Albert’s curiosity continues to edge him towards breaking the rules and entering that closet, but his need for employment and fear is what stops him. If he were to lose this job, he would be losing his only source of income. Many would assume that Albert would be thankful to leave this dead-end job and pursue a career in criminal investigation, but he would insist that it was always his dream to work in a small office and market science tools, surrounded by people who don’t like him. Instead, he turns his attention back to his computer and resumes work.',
             choices: [
