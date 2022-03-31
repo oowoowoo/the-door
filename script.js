@@ -57,11 +57,23 @@ window.onload = function(){
             ]
         },
         turn: {
-            text: '',
+            text: 'Slowly, Albert began to turn his head towards the only thing behind him– the closet itself. The area was a bit dim because of some lightbulbs having burnt out, but Albert caught a glimpse of a shiny figure retreating into the closet from the top of the door, sealing it with a click. Instantly, he broke out in what felt like a flood of sweat. Why was something actually looking at me?!',
             choices: [
-                
+                ['Finish work with an anxious feeling', 'finished']
             ]
-        }
+        },
+        finished:  {
+            text: 'Opting to ignore the feeling, Albert turned back to his files and continued his work. All the way to five o’ clock, the feeling did not subside. He was on edge the entire time, but managed to finish what he needed to anyway.',
+            choices: [
+                ['Finish work in ignorant bliss', 'finished']
+            ]
+        },
+        finished: {
+            text: 'Leaning back into his chair with a sigh, Albert pushed away from his desk and stood up to stretch. After tidying up his desk one last time, he gathered his belongings and made his way to the parking lot.I still don’t know what to expect. I’m nervous, but excited, but super nervous… like, really nervous. Gosh. His thoughts raced as he rode the elevator to the first floor. The receptionist that worked on the first floor had left the second he was able, so it was just Albert. By the time he had wandered around, played some meaningless games on his phone, and replied to some emails, about half an hour had passed.  It was time for him to really meet with Cynthia. He took a deep breath and left to the parking lot.',
+            choices: [
+                ['Ask Cynthia for more info', 'ask'], ['Tell Cynthia you are ready', 'tell'], ['Change your mind and leave','leave']
+            ]
+        },
     }
   
 } //do not put js after this tag
