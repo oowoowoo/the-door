@@ -11,7 +11,7 @@ button{
 button:hover
 {
     color: rgb(37, 153, 255);
-    transition: 0.50s;
+    transition: 0.3s;
     border: 3px;
 }
 #branch1{
