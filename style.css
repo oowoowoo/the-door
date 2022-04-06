@@ -3,7 +3,7 @@ body{
     font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
-button{
+button {
     display: flex;
     justify-content: space-around;
     border-radius: 0.6em;

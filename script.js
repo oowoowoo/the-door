@@ -1,9 +1,3 @@
-window.onload = function(){
-
-//im just figuring things out over here
-//the function for the text is going to have to use inner.html stuff 
-
-
 
     const story = {
         intro:{
@@ -353,10 +347,5 @@ window.onload = function(){
                 []
             ]
         },
- 
-
-
-
     }
   
-} //do not put js after this tag
