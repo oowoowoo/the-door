@@ -7,14 +7,11 @@ body{
     font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
-<<<<<<< HEAD
 button{
     background-color: azure;
+    margin: 6px;
 }
-header, .choices{
-=======
-button {
->>>>>>> edc64e73dec38c345bc236652a0c2b34a87366b0
+header, .choices, .story{
     display: flex;
     justify-content: space-around;
     border-radius: 0.3em;
@@ -23,15 +20,7 @@ button:hover
 {
     color: rgb(37, 153, 255);
 }
-#branch1{
-    margin-left: 40%;
-}
-#branch2{
-    margin-left: 40%;
-}
-#workbutton{
-    margin-left: 40%;
-}
+
 div{
     display: block;
 }

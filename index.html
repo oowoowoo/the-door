@@ -21,7 +21,7 @@
     </div>
 </section>
 <section class="choices">
-    <form id="buttons">
+    <form id="choices">
         <button data-dest="sneakfail" onclick="storyLoop(this.dataset.dest)">Sneak into janitor’s closet</button>
         <button data-dest="work" onabort="restart()">Keep working</button>
     </form>
@@ -71,10 +71,58 @@
     <section class="choices">
         <button data-dest="contWork" onclick="storyLoop(this.dataset.dest)">Continue working</button>
     </section>
+    <section class="story">
+     <div id="text">
+        <h3>
+            Eager to know more, Albert quietly rose from his seat and moved to Cynthia’s desk. She sighed and looked up at him, anticipating his question.“Are you able to tell me anything right now?” He had a soft smile on his face, hoping to learn more before he committed himself to seeing the closet. “Er…” Cynthia glanced over to Boss’s office, checking for his eagle eyes “not really. Everything I could say was on that note… I’m scared that anything else will get you too antsy.” Albert’s shoulders dropped and his smile faltered for a moment, but it rose again when he nodded goodbye and returned to his desk. He really had to wait until five P.M.
+        </h3>
+     </div>
+    </section>
+        <section class="choices">
+            <form id="buttons">
+            <button data-dest="contWork" onclick="storyLoop(this.dataset.dest)">Continue working</button>
+        </form>
+        </section>
+        <section class="story">
+            <div id="text">
+                <h3>
+                    Although he was nervous, Albert was excited to learn the secret of the closet. Finally, after about three years of waiting and wondering, he was going to know. It’s a feat that the company was able to keep this secret under wraps for so long, only now allowing a new person into the mix. Maybe it was a good thing that he had no friends, considering he would now have nobody to run to with whatever information was in this closet.
+                </h3>
+            </div>
+        </section>
+        <section class="choices">
+            <form id="buttons">
+                <button data-dest="workExcited" onclick="storyLoop(this.dataset.dest)">Continue working excitedly</button>
+            </form>
+        </section>
+        <section class="story">
+            <div id="text">
+                <h3>
+                    During his work, Albert could feel a strange sensation at the nape of his neck. He had hoped to play it off as nerves, or maybe the thrill of new prospects, but this was an all too familiar feeling. The feeling of somebody watching him, boring their eyes into his back
+                </h3>
+            </div>
+        </section>
+        <section class="choices">
+            <form id="buttons">
+                <button data-dest="turnTrue" onclick="storyLoop(this.dataset.dest)">Turn around</button>
+                <button data-dest="turnFalse" onclick="storyLoop(this.dataset.dest)">Dont turn around</button>
+            </form>
+        </section>
+        <section class="story">
+            <div id="text">
+                <h3>
+                    Slowly, Albert began to turn his head towards the only thing behind him– the closet itself. The area was a bit dim because of some lightbulbs having burnt out, but Albert caught a glimpse of a shiny figure retreating into the closet from the top of the door, sealing it with a click. Instantly, he broke out in what felt like a flood of sweat. Why was something actually looking at me?!
+                </h3>
+            </div>
+        </section>
+        <section class="choices">
+            <form id="buttons">
+                <button data-dest="finished" onclick="storyLoop(this.dataset.dest)">Finish work with an anxious feeling</button>
+            </form>
+        </section>
+
     <div>
-        <button id="restart" type="button" onclick="window.reload();">Restart</button>
+        <button id="restart" type="button" onclick="restart();">Restart</button>
     </div>
-    </div>
-    </body>
 </body>
 </html>
