@@ -7,10 +7,14 @@ body{
     font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
+<<<<<<< HEAD
 button{
     background-color: azure;
 }
 header, .choices{
+=======
+button {
+>>>>>>> edc64e73dec38c345bc236652a0c2b34a87366b0
     display: flex;
     justify-content: space-around;
     border-radius: 0.3em;
