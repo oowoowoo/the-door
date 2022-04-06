@@ -3,13 +3,11 @@ window.onload = function(){
 //im just figuring things out over here
 //the function for the text is going to have to use inner.html stuff 
 
-
-
     const story = {
         intro:{
             text: 'Test Tubes and Thermometers, Inc. was a seemingly ordinary science supply company, yet it was anything but. Albert Average, a run-of-the-mill office worker with an innate thirst for knowledge, has hopes to soon uncover the secrets of his own workplace. He is a lanky man with a strange smile, often adorned with ill-fitting business clothes, and light-brown stiff hair that never has a strand out of place. Because of his unusual presence, Albert is not highly favored in his workplace by his coworkers. Since almost the entire office decided not to be his friend, the thoughts of what could be hidden in the janitor’s closet were the only thing that had plagued his mind. His boss explained on his first day that the janitor’s closet was strictly off-limits to any employees besides himself',
             choices: [
-                ['Sneak into the closet', '2'], ['Keep working', 'sneakFail'],
+                ['Sneak into the closet', 'sneakfail'], ['Keep working', 'work'],
             ],
         },
 

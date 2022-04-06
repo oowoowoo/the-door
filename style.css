@@ -1,18 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background: gray;
-    font-family: 'papyrus', fantasy;
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
 button{
+    background-color: azure;
+}
+header, .choices{
     display: flex;
     justify-content: space-around;
-    border-radius: 0.6em;
+    border-radius: 0.3em;
 }
 button:hover
 {
     color: rgb(37, 153, 255);
-    transition: 0.3s;
-    border: 3px;
 }
 #branch1{
     margin-left: 40%;
