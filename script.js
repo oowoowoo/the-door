@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 window.onload = function(){
 
 //im just figuring things out over here
 //the function for the text is going to have to use inner.html stuff 
-=======
->>>>>>> edc64e73dec38c345bc236652a0c2b34a87366b0
 
     const story = {
         intro:{
@@ -389,7 +386,6 @@ window.onload = function(){
                 ['Look around', 'look']
             ]
         },
-<<<<<<< HEAD
 
         look: {
             text: ' “I thought this was some kind of janitor’s closet, but look at these,” Cynthia showed Albert many files that were variously labeled with alien words.\n\nAlbert kept reading the contents in awe. This facility knew so much about these people, and it was all being withheld from the public. \n\n“We keep seeing these files everywhere, why don’t we use them?” Albert suggested to her.',
@@ -429,7 +425,3 @@ window.onload = function(){
     
 } //do not put js after this tag
 
-=======
-    }
-  
->>>>>>> edc64e73dec38c345bc236652a0c2b34a87366b0
