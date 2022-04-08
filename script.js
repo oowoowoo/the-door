@@ -446,7 +446,7 @@ function storyLoop(choice) {
     buttonContainer.innerHTML = choices;
 
     if(NotOver){
-        return "continues"
+        return "To be continues"
     } else {
         return 'Story over'
     }
@@ -487,4 +487,3 @@ function restart(){
     storyLoop('start');
     return "The story has reset."
 }
-storyLoop('start');
