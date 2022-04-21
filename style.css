@@ -30,12 +30,3 @@ h3{
 #button{
     text-align: center;
 }
-@media (max-width: 1024px) {
-
-    #text, #choicelist {
-      width: 100%;
-    }
-    button {
-      width: 100%;
-    }
-}

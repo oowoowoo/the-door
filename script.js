@@ -3,6 +3,12 @@
 //im just figuring things out over here
 //the function for the text is going to have to use inner.html stuff 
 
+
+let storage = [],
+  itsNotOver = true,
+  storyContainer = document.getElementById('text'),
+  buttonContainer = document.getElementById('buttons');
+
     const storyElements = {
         intro: {
             text: 'Test Tubes and Thermometers, Inc. was a seemingly ordinary science supply company, yet it was anything but. Albert Average, a run-of-the-mill office worker with an innate thirst for knowledge, has hopes to soon uncover the secrets of his own workplace. He is a lanky man with a strange smile, often adorned with ill-fitting business clothes, and light-brown stiff hair that never has a strand out of place. Because of his unusual presence, Albert is not highly favored in his workplace by his coworkers. Since almost the entire office decided not to be his friend, the thoughts of what could be hidden in the janitor’s closet were the only thing that had plagued his mind. His boss explained on his first day that the janitor’s closet was strictly off-limits to any employees besides himself',
@@ -424,66 +430,17 @@
     }
 
 
-//variables
-let storage = [],
-  itsNotOver = true,
-  storyContainer = document.getElementById('text'),
-  buttonContainer = document.getElementById('choices');
+function storyBuilder() {
+    let story = ``;
 
-function storyLoop(choice) {
-    if (choices){
-        return "restart";
-    } else {
-        storage.push(choice);
-        console.log(storage);
-    }
-    choices = buttonBuilder();
-
-    if (story) {
-        return "Error";
-    }
-    storyContainer.innerHTML = story;
-    buttonContainer.innerHTML = choices;
-
-    if(NotOver){
-        return "To be continues"
-    } else {
-        return 'Story over'
-    }
 }
+
 
 function buttonBuilder() {
-    let chapter = storyElements[storage[storage.length - 1]],
-    choices = chapter.choices
-    choicesList = '';
 
-    if (choices.length > 0) {
-        for (choice of choices) {
-          choiceList += `<button data-dest='${choice[1]}' onclick='storyLoop(this.dataset.dest)'>${choice[0]}</button>`;
-        }
-    } else {
-        choiceList = `<p>Story done</p> 
-        <button onclick='reset() restart</button>`;
-        let itsNotOver = false;
-    }
-    return choicesList;
 }
 
-function storyBuilder() {
-    let string = ``;
-    if (storage.length < 1) {
-      return false;
-    } else {
-      for (part of storage) {
-        string += `${storyElements[part].text}`;
-      }
-      return string;
-    }
-}
-
-function restart(){
-    itsNotOver = true;
-    storage = [];
-    storyLoop('start');
-    return "The story has reset."
+function storyLoop(choice){
+    let story = storyBuilder
+    choices = buttonBuilder
 }
