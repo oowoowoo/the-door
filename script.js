@@ -431,16 +431,59 @@ let storage = [],
 
 
 function storyBuilder() {
-    let story = ``;
-
-}
+    let string = ``;
+    if (storage.length < 1) {
+        return false;
+    } else {
+        for (part of storage) {
+        string += `${storyElements[part].text}`;
+        }
+        return string;
+    }
+    }
 
 
 function buttonBuilder() {
 
+    let chapter = storyElements[storage[storage.length - 1]],
+        choices = chapter.choices,
+        choiceList = ``;
+    
+    if (choices.length > 0) {
+        for (choice of choices) {
+        choiceList += `<button data-dest='${choice[1]}' onclick='storyLoop(this.dataset.dest)'>${choice[0]}</button>`;
+        }
+    } else {
+        choiceList = `<p>This story has concluded...</p> 
+        <button onclick='reset()'>Click here to restart</button>
+        <p>Also, here are the choices you have made: <b>${storage}</b></p>
+        <p>&#169 2021 Justice Aguilera and Joshua Kaprielian</p>
+        <p>CART Web App Development AM Class</p>`;
+        let itsNotOver = false;
+    }
+    return choiceList;
+    }
+
+
+function storyLoop(choice) {
+
+    if (!choice) {
+        return "ERROR: No choice selected!";
+    } else {
+        storage.push(choice);
+        console.log(storage);
+    }
+
+    let story = storyBuilder(),
+        choices = buttonBuilder();
+
+    storyContainer.innerHTML = story;
+    buttonContainer.innerHTML = choices;
 }
 
-function storyLoop(choice){
-    let story = storyBuilder
-    choices = buttonBuilder
+function reset() {
+    itsNotOver = true;
+    storage = [];
+    storyLoop('start');
+    return "The story has reset."
 }
