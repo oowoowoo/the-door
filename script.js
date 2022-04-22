@@ -62,7 +62,7 @@ let storage = [],
         workExcited: {
             text: '<br><br>During his work, Albert could feel a strange sensation at the nape of his neck. He had hoped to play it off as nerves, or maybe the thrill of new prospects, but this was an all too familiar feeling. The feeling of somebody watching him, boring their eyes into his back',
             choices: [
-                ['Turn around', 'turnTrue'], ['Dont turn around', 'turnFalse']
+                ['Turn around', 'turnTrue'], [`Don't turn around`, 'turnFalse']
             ]
         },
 
@@ -384,18 +384,18 @@ let storage = [],
         walk: {
             text: '<br><br>During the walk to Rosebud’s cell, the government had sent out a signal to Rosebud’s planet.  When it reaches the planet, the leader of his race is a bit hesitant toward it because he doesn’t know how one of his people is on another planet, let alone Earth.<br><br>“Impossible, this must be a joke,” the leader said loudly.<br><br>“Maybe one of the ships was attacked and was taken by one of the neighboring solar systems,” a worker said. Upon hearing this, the leader now arranges to take a whole army to the planet to see if it’s true.<br><br>When they make it to earth the leader says, “We are here because one of our own is being trapped on this disgusting planet, so return him or suffer the consequences.”',
             choices: [
-                ['Conitnue walking', 'walk']
+                ['Conitnue walking', 'war']
             ]
         },
 
-        walk: {
+        war: {
             text: '<br><br>The government doesn’t take this threat lying down and uses the alien war weapons to start an all out war.<br><br>Cynthia says, “We can’t stop this, there’s too many of them.” <br><br>After being freed by one of his people, Rosebud tried to stop them from fighting but he died in the crossfire. Now the leader is even more fierce and puts out the weapons they have on Earth.<br><br>After a week into the war, the aliens have won and earth is in ruins.',
             choices: [
                 ['Terrible ending', 'restart']
             ]
         },
 
-        walk: {
+        vents: {
             text: '<br><br>“Yeah, better off they don’t know we’re here,” Cynthia looked down at Rosebud pitifully. “Let’s keep moving.”<br><br>Albert and Cynthia kept moving through the vents until they arrived at a room whose vent covering was already gone. Dropping in, they realized it was a secluded room. Albert quietly celebrated behind Cynthia.',
             choices: [
                 ['Look around', 'look']
