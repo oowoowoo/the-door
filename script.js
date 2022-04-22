@@ -351,6 +351,13 @@ let storage = [],
             ]
         },
 
+        vents: {
+            text: 'During their trip through the vents, Albert could hear another conversation in the distance. Once again, they peered into the room to better hear them. “Our allies in France are starting to get antsy, General. If we don’t dispose of this thing or use it soon, they’re gonna rethink our partnership,” a stout man seemed to be barking at the large one“Do we have any means of contacting their leaders right now?” The general peered down at the man as he scrambled to set up an impromptu meeting. While Cynthia focused on their conversation, Albert began to look around the room. Against the right wall, he noticed a cherry-red button with a strange shape on the top of it. He assumed it was an image of an alien, as the stalks on it resembled Rosebud.“Come on, Albert. We aren’t getting anything out of this,” Cynthia began moving again.',
+            choices: [
+                []
+            ]
+        },
+
         alertRosebud: {
             text: ' “Psst! Rosebud!” Albert whisper-shouted to them and waved. Rosebud sprouted a tentacle and waved back.\n\n“Hey!” A guard burst into the cell and looked into the vent, spotting Albert and Cynthia. Moments later, a blaring alarm began to sound.\n\n“Nice job, dimwit!” Cynthia scuttered through the vent and quickly jumped into the first room they arrived at. It smelled like fresh coffee and sadness, it was a breakroom. \n\nAn employee stared at the two as he continued to chew his granola bar. Quickly, he reached for his walkie-talkie.',
             choices: [
