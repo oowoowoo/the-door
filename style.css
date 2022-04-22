@@ -14,6 +14,8 @@ button{
     background-color: rgb(121, 144, 64);
     margin: 6px;
 }
+
+
 header, .choices, .story{
     display: flex;
     justify-content: space-around;
