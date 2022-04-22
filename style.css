@@ -15,7 +15,9 @@ button{
     margin: 6px;
     font-size: 125%;
 }
-
+#buttons{
+    text-align: center;
+}
 
 header, .choices, .story{
     display: flex;
@@ -24,6 +26,7 @@ header, .choices, .story{
     border-radius: 5px;
     margin: 10px;
     border: 0;
+    flex-wrap: wrap;
 }
 button:hover
 {
@@ -58,7 +61,7 @@ img {
     padding: 0.75rem;
     display: flex;
     flex-wrap: wrap;
-        font-weight: 500;
+    font-weight: 500;
 }
 
 @media (max-width: 1024px) {
