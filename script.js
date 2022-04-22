@@ -32,7 +32,7 @@ let storage = [],
         },
 
         info: {
-            text: '<br><br>“Yes, right here…” Albert opened the drawer on his desk containing the files she asked for. Before handing them to her, he looked into her eyes and asked her, “what do you know about that janitor closet, Cynthia?”<br><br> Her eyes widened for a moment, before she smiled and stared at him. She reached for a pad of sticky notes atop his desk and quickly scribbled something down, then peeled off and handed the sticky note to him. <br><br>It read: <i>Something’s being hidden in that closet, something that isn’t really human but not an animal. If you really wanna know more about it, meet me in the parking lot once we get off our shifts. I’ll be near my car. Boss can’t be here when we do this.</i> <br><br>Albert looked up to her and she smiled, beginning to walk away.<br>“That’s your next appointment, remember to not be late!” She sat back at her desk and the two of them continued their work like nothing happened.',
+            text: '<br><br>“Yes, right here…” Albert opened the drawer on his desk containing the files she asked for. Before handing them to her, he looked into her eyes and asked her, “what do you know about that janitor closet, Cynthia?”<br><br> Her eyes widened for a moment, before she smiled and stared at him. She reached for a pad of sticky notes atop his desk and quickly scribbled something down, then peeled off and handed the sticky note to him. <br><br>It read: <i>Something’s being hidden in that closet, something that isn’t really human but not an animal. If you really wanna know more about it, meet me in the parking lot once we get off our shifts. I’ll be near my car. Boss can’t be here when we do this.</i> <br>Albert looked up to her and she smiled, beginning to walk away.<br><br>“That’s your next appointment, remember to not be late!” She sat back at her desk and the two of them continued their work like nothing happened.',
             choices: [
                 ['Sneak into the closet right away','sneakCloset'], ['Ask to know more', 'askMore']
             ],
@@ -46,35 +46,35 @@ let storage = [],
         },
 
         askMore: {
-            text: 'Eager to know more, Albert quietly rose from his seat and moved to Cynthia’s desk. She sighed and looked up at him, anticipating his question.“Are you able to tell me anything right now?” He had a soft smile on his face, hoping to learn more before he committed himself to seeing the closet. “Er…” Cynthia glanced over to Boss’s office, checking for his eagle eyes “not really. Everything I could say was on that note… I’m scared that anything else will get you too antsy.” Albert’s shoulders dropped and his smile faltered for a moment, but it rose again when he nodded goodbye and returned to his desk. He really had to wait until five P.M.',
+            text: '<br><br>Eager to know more, Albert quietly rose from his seat and moved to Cynthia’s desk. She sighed and looked up at him, anticipating his question.<br><br>“Are you able to tell me anything right now?” He had a soft smile on his face, hoping to learn more before he committed himself to seeing the closet. <br><br>“Er…” Cynthia glanced over to Boss’s office, checking for his eagle eyes “not really. Everything I could say was on that note… I’m scared that anything else will get you too antsy.” <br><br>Albert’s shoulders dropped and his smile faltered for a moment, but it rose again when he nodded goodbye and returned to his desk. He really had to wait until five P.M.',
             choices: [
                 ['Continue working', 'contWork']
             ]
         },
 
         contWork: {
-            text: 'Although he was nervous, Albert was excited to learn the secret of the closet. Finally, after about three years of waiting and wondering, he was going to know. It’s a feat that the company was able to keep this secret under wraps for so long, only now allowing a new person into the mix. Maybe it was a good thing that he had no friends, considering he would now have nobody to run to with whatever information was in this closet.',
+            text: '<br><br>Although he was nervous, Albert was excited to learn the secret of the closet. Finally, after about three years of waiting and wondering, he was going to know. It’s a feat that the company was able to keep this secret under wraps for so long, only now allowing a new person into the mix. Maybe it was a good thing that he had no friends, considering he would now have nobody to run to with whatever information was in this closet.',
             choices: [
                 ['Continue working excitedly', 'workExcited']
             ]
         },
 
         workExcited: {
-            text: 'During his work, Albert could feel a strange sensation at the nape of his neck. He had hoped to play it off as nerves, or maybe the thrill of new prospects, but this was an all too familiar feeling. The feeling of somebody watching him, boring their eyes into his back',
+            text: '<br><br>During his work, Albert could feel a strange sensation at the nape of his neck. He had hoped to play it off as nerves, or maybe the thrill of new prospects, but this was an all too familiar feeling. The feeling of somebody watching him, boring their eyes into his back',
             choices: [
                 ['Turn around', 'turnTrue'], ['Dont turn around', 'turnFalse']
             ]
         },
 
         turnTrue: {
-            text: 'Slowly, Albert began to turn his head towards the only thing behind him– the closet itself. The area was a bit dim because of some lightbulbs having burnt out, but Albert caught a glimpse of a shiny figure retreating into the closet from the top of the door, sealing it with a click. Instantly, he broke out in what felt like a flood of sweat. Why was something actually looking at me?!',
+            text: '<br><br>Slowly, Albert began to turn his head towards the only thing behind him– the closet itself. The area was a bit dim because of some lightbulbs having burnt out, but Albert caught a glimpse of a shiny figure retreating into the closet from the top of the door, sealing it with a click. Instantly, he broke out in what felt like a flood of sweat. <i>Why was something actually looking at me?!</i>',
             choices: [
                 ['Finish work with an anxious feeling', 'finished']
             ]
         },
 
         turnFalse: {
-            text: 'Opting to ignore the feeling, Albert turned back to his files and continued his work. All the way to five o’ clock, the feeling did not subside. He was on edge the entire time, but managed to finish what he needed to anyway.',
+            text: '<br><br>Opting to ignore the feeling, Albert turned back to his files and continued his work. All the way to five o’ clock, the feeling did not subside. He was on edge the entire time, but managed to finish what he needed to anyway.',
             choices: [
                 ['Continue work in ignorant bliss', 'finished']
             ]
@@ -172,7 +172,7 @@ let storage = [],
         speak: {
             text: '“We’ve got about five minutes before we’re busted, Albert. We gotta get out of here.” She moved out of the room and began moving towards the elevator, turning around and waiting for Albert. \n\n“Sure thing.” Albert began to walk out of the room and turned around. Rosebud was waving at him.',
             choices: [
-                ['Wave back','wave'],['Ignore Rosebud and leave','leave']
+                ['Wave back','wave'],['Ignore Rosebud and leave','leave3']
             ]
         },
     
@@ -183,7 +183,7 @@ let storage = [],
             ]
         },
     
-        leave: {
+        leave3: {
             text: '“Goodbye, Albert!” Rosebud waved very strongly towards him, but Albert was unaffected. He simply nodded and closed the door on his way out.\n\nHe rode the elevator back down to the lobby with Cynthia and they headed to the parking lot.',
             choices: [
                 ['Discuss with Cynthia', 'discuss']
