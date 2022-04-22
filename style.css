@@ -1,36 +1,49 @@
 * {
     box-sizing: border-box;
-    font-family:'Nunito Sans', sans-serif;
+    
 }
-
+header{
+    flex-wrap: wrap;
+}
 body{
     background: gray;
     text-align: center;
+    font-family:'Nunito Sans', sans-serif;
 }
 button{
-    background-color: azure;
+    background-color: rgb(121, 144, 64);
     margin: 6px;
 }
 header, .choices, .story{
     display: flex;
     justify-content: space-around;
     border-radius: 0.3em;
+    border-radius: 5px;
+    margin: 10px;
+    border: 0;
 }
 button:hover
 {
-    color: rgb(37, 153, 255);
+    color: rgb(0, 200, 255);
+    transition: 0.3s;
 }
 div{
     display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h3{
-    display: block;
-}
-#button{
+h1, h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
     text-align: center;
+  }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 #text, #buttons {
-    width: 50%;
     margin: 0;
     border-radius: 1rem;
     padding: 0.75rem;
@@ -38,4 +51,14 @@ h3{
     flex-wrap: wrap;
     justify-content: center;
     font-weight: 500;
-  }
+}
+
+@media (max-width: 1024px) {
+    #text, #choicelist {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+}
+  

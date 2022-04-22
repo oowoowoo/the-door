@@ -444,7 +444,6 @@ function storyBuilder() {
 
 
 function buttonBuilder() {
-
     let chapter = storyElements[storage[storage.length - 1]],
         choices = chapter.choices,
         choiceList = ``;
@@ -455,20 +454,14 @@ function buttonBuilder() {
         }
     } else {
         choiceList = `<p>This story has concluded...</p> 
-        <button onclick='reset()'>Click here to restart</button>
-        <p>Also, here are the choices you have made: <b>${storage}</b></p>
-        <p>&#169 2021 Justice Aguilera and Joshua Kaprielian</p>
-        <p>CART Web App Development AM Class</p>`;
+        <button onclick='reset()'>Click here to restart</button>`;
         let itsNotOver = false;
     }
     return choiceList;
     }
 
-
 function storyLoop(choice) {
-
     if (!choice) {
-        return "ERROR: No choice selected!";
     } else {
         storage.push(choice);
         console.log(storage);
@@ -479,6 +472,12 @@ function storyLoop(choice) {
 
     storyContainer.innerHTML = story;
     buttonContainer.innerHTML = choices;
+
+    if (itsNotOver) {
+        return "The story goes on!";
+      } else {
+        return "This story is now over...";
+      }
 }
 
 function reset() {
