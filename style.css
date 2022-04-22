@@ -1,16 +1,19 @@
 * {
     box-sizing: border-box;
     font-family:'Nunito Sans', sans-serif;
+    font-size: 20px;
 }
 
 body{
     background: gray;
-    text-align: center;
 }
 button{
     background-color: azure;
-    margin: 6px;
+    margin: 10px;
+    font-size: 17px;
 }
+
+
 header, .choices, .story{
     display: flex;
     justify-content: space-around;
