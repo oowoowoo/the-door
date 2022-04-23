@@ -109,7 +109,7 @@ let storage = [],
         },
 
         enterRosebud: {
-            text: '<br><br>Cynthia pulled the door open, stepping back and looking at Albert with his jaw dropped in awe. In front of them was this strange light pink creature, with four stalks topped with a large eyeball on each end looking towards the two of them. The creature’s body was essentially a big blob of flesh, and the entire thing looked like it was wet and slimy. Albert pinched himself.<br><br>“Ehm… Hi!” It spoke, somehow, and the middle stem pushed towards the front of itself, lowering itself to meet our heights. It hadn’t quite set in yet, but this thing was about nine feet tall, three feet taller than Albert. He assumed that this stalk was their “leader”.',
+            text: '<img src="img/discovery.png" alt="janitor’s closet"><br><br>Cynthia pulled the door open, stepping back and looking at Albert with his jaw dropped in awe. In front of them was this strange light pink creature, with four stalks topped with a large eyeball on each end looking towards the two of them. The creature’s body was essentially a big blob of flesh, and the entire thing looked like it was wet and slimy. Albert pinched himself.<br><br>“Ehm… Hi!” It spoke, somehow, and the middle stem pushed towards the front of itself, lowering itself to meet our heights. It hadn’t quite set in yet, but this thing was about nine feet tall, three feet taller than Albert. He assumed that this stalk was their “leader”.',
             choices: [
                 ['Speak to them', 'speak'], [`Don't speak at all`, 'dontSpeak']
             ]
