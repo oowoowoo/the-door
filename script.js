@@ -18,7 +18,7 @@ let storage = [],
         },
 
         sneakFail: {
-            text: 'Albert’s curiosity continues to edge him towards breaking the rules and entering that closet, but his need for employment and fear is what stops him. If he were to lose this job, he would be losing his only source of income. Many would assume that Albert would be thankful to leave this dead-end job and pursue a career in criminal investigation, but he would insist that it was always his dream to work in a small office and market science tools, surrounded by people who don’t like him. Instead, he turns his attention back to his computer and resumes work.',
+            text: `Albert’s curiosity continues to edge him towards breaking the rules and entering that closet, but his need for employment and fear is what stops him. If he were to lose this job, he would be losing his only source of income. Many would assume that Albert would be thankful to leave this dead-end job and pursue a career in criminal investigation, but he would insist that it was always his dream to work in a small office and market science tools, surrounded by people who don’t like him. Instead, he turns his attention back to his computer and resumes work.`,
             choices: [
                 ['Continue working', 'work'],
             ],
@@ -286,7 +286,7 @@ let storage = [],
         left: {
             text: '<br><br>“Left it is,” Cynthia continued through the vent, checking for Albert’s presence behind her every few moments.<br><br>“…and I think that the thing is dangerous…” A voice sounded from one of the rooms. Albert listened again, trying to pinpoint which room the sound was coming from.<br><br>“Cynthia, wait!” Albert stopped her and she turned around, looking for a reason he stopped her.',
             choices: [
-                []
+                ['Eavesdrop', 'alarm'], ['Nevermind', 'vents']
             ]
         },
     
@@ -342,7 +342,7 @@ let storage = [],
         alarm: {
             text: '<br><br>“Dangerous, yes, but extremely valuable. Think about the future of technology with this thing!” A man raised his voice at the group surrounding him. He was dressed entirely in military garb with not a thread out of place. <br><br>“Just gonna assume they mean Rosebud?” Cynthia whispered to Albert behind her.<br><br>“Probably. It sounds as though they have some plans to use Rosebud…” Albert sighed as they watched the man leave the room.',
             choices: [
-                ['Enter the room,', 'enterRoom'],['Keep moving', 'moving']
+                ['Enter the room', 'enterRoom'],['Keep moving', 'moving']
             ]
         },
     
@@ -353,13 +353,7 @@ let storage = [],
             ]
         },
 
-        vents: {
-            text: '<br><br>During their trip through the vents, Albert could hear another conversation in the distance. Once again, they peered into the room to better hear them. “Our allies in France are starting to get antsy, General. If we don’t dispose of this thing or use it soon, they’re gonna rethink our partnership,” a stout man seemed to be barking at the large one“Do we have any means of contacting their leaders right now?” The general peered down at the man as he scrambled to set up an impromptu meeting. While Cynthia focused on their conversation, Albert began to look around the room. Against the right wall, he noticed a cherry-red button with a strange shape on the top of it. He assumed it was an image of an alien, as the stalks on it resembled Rosebud.“Come on, Albert. We aren’t getting anything out of this,” Cynthia began moving again.',
-            choices: [
-                []
-            ]
-        },
-
+        
         alertRosebud: {
             text: '<br><br>“Psst! Rosebud!” Albert whisper-shouted to them and waved. Rosebud sprouted a tentacle and waved back.<br><br>“Hey!” A guard burst into the cell and looked into the vent, spotting Albert and Cynthia. Moments later, a blaring alarm began to sound.<br><br>“Nice job, dimwit!” Cynthia scuttered through the vent and quickly jumped into the first room they arrived at. It smelled like fresh coffee and sadness, it was a breakroom. <br><br>An employee stared at the two as he continued to chew his granola bar. Quickly, he reached for his walkie-talkie.',
             choices: [
