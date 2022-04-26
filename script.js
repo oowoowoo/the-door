@@ -230,7 +230,14 @@ let storage = [],
         fixDevice: {
             text: '<br><br>They found a way to sneak in, but the place is a maze. They manage to steal a key card from one of the workers without getting caught.<br><br>“Which way?” Albert asked.<br><br>They decided to split up, Cynthia and Rosebud went to the right side while Albert went to the left ',
             choices: [
-                ['Right way','right'],['Left way', 'left']
+                ['Right way','right2'],['Left way', 'left2']
+            ]
+        },
+
+        right2: {
+            text: 'While Cynthia and Rosebud traveled through each room, they saw the general office and tried to get inside the room but saw it was key card locked. Luckily, they have a key card from the guy they stole it from and got inside. While going through the files, Cynthia sees a file about where the equipment they need is.<br><br>Suddenly, a voice overhead announces that a button contacting the alien planet has been pushed.',
+            choices: [
+                []
             ]
         },
     
