@@ -11,7 +11,7 @@ body{
     font-size: 130%;
 }
 button{
-    background-color: rgb(121, 144, 64);
+    background-color: yellow;
     margin: 6px;
     font-size: 125%;
 }
@@ -73,3 +73,7 @@ img {
     }
 }
   
+
+.box {
+    background-color: darkgray;
+}
