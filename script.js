@@ -237,7 +237,7 @@ let storage = [],
         right2: {
             text: '<br><br>While Cynthia and Rosebud traveled through each room, they saw the general office and tried to get inside the room but saw it was key card locked. Luckily, they have a key card from the guy they stole it from and got inside. While going through the files, Cynthia sees a file about where the equipment they need is.<br><br>Suddenly, a voice overhead announces that a button contacting the alien planet has been pushed.',
             choices: [
-                ['Greet the aliens', 'greetAlien']
+                ['Greet the aliens', `greetAlien`]
             ]
         },
 
@@ -251,9 +251,10 @@ let storage = [],
         greetAlien: {
             text: '<br><br>Albert and Cynthia moved to the outside of the building where they watched an alien ship land in a nearby field. Many government officials surrounded the ship, ready to attack. Motioning to Rosebud to stay hidden, Albert and Cynthia moved towards the ship.<br><br>Rosebud’s leader says, “Greeting earthlings, we are here because you have taken one of our own and we will take him by force if we have to.”<br><br>The world is shaking up, either the government has to prepare for war or they try to find Rosebud and make a deal.',
             choices: [
-                ['Stay back and watch', 'warEnds'] ['Speak to the leader', 'speakLeader']
+                ['Stay back and watch', 'warEnds'], ['Speak to the leader', 'speakLeader']
             ]
         },
+
 
         warEnds: {
             text: '<br><br>Rosebud realizes he has to figure out how to help calm his people with Albert and Cynthia.<br><br>“Don’t you people understand you’re just making things worse?” Albert and Cynthia tried to say to the leaders, but to no avail. Meanwhile, Rosebud was explaining his situation to his leader.<br><br>“These people did not experiment on you?” Rosebud’s leader questioned, and Rosebud fervently denied something like that ever happening.<br><br>After a long discussion with Rosebud, his people decide to leave and take him back without any trouble. Rosebud and Albert tearfully shake hands again as the alien ship is loading up to be sent away. ',
@@ -398,7 +399,7 @@ let storage = [],
         exit: {
             text: '<br><br>“Albert, why are you leading me to the exit of this place?” Cynthia stopped walking behind him just before they went through the door.<br><br>“Er… I thought that we could let the government handle Rosebud?”<br><br>Cynthia deadpanned at him and started to turn around, “I’m not leaving without knowing that Rosebud is safe. You’re free to go if you wanna, but I’m not leaving.”<br><br>Albert stood in place and watched her walk away.',
             choices: [
-                ['Albert leave with them','leave2'],['Albert decides to stay', 'stay']
+                ['Albert leave with them','leave2'], ['Albert decides to stay', 'stay']
             ]
         },
     
@@ -419,7 +420,7 @@ let storage = [],
         alarm: {
             text: '<br><br>“Dangerous, yes, but extremely valuable. Think about the future of technology with this thing!” A man raised his voice at the group surrounding him. He was dressed entirely in military garb with not a thread out of place. <br><br>“Just gonna assume they mean Rosebud?” Cynthia whispered to Albert behind her.<br><br>“Probably. It sounds as though they have some plans to use Rosebud…” Albert sighed as they watched the man leave the room.',
             choices: [
-                ['Enter the room', 'enterRoom'],['Keep moving', 'moving']
+                ['Enter the room', 'enterRoom'], ['Keep moving', 'moving']
             ]
         },
     
