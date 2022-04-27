@@ -10,8 +10,8 @@ body{
     font-family:'Nunito Sans', sans-serif;
     font-size: 130%;
 }
-button{
-    background-color: yellow;
+button {
+    background-color: green;
     margin: 6px;
     font-size: 125%;
 }
@@ -19,7 +19,7 @@ button{
     text-align: center;
 }
 
-header, .choices, .story{
+header, .choices, .story {
     display: flex;
     justify-content: space-around;
     border-radius: 0.3em;
@@ -28,12 +28,14 @@ header, .choices, .story{
     border: 0;
     flex-wrap: wrap;
 }
+
 button:hover
 {
     color: white;
     transition: 0.3s;
 }
-div{
+
+div {
     display: block;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

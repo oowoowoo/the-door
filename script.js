@@ -146,7 +146,7 @@ let storage = [],
         listen: {
             text: '<br><br>Cynthia looks up from her watch and to Albert. “We’ve got about half an hour until the real janitor comes around this floor.” <br><br>Albert looked back to Rosebud and pondered for a moment, wondering what he should ask them. ',
             choices: [
-                ['Why are you here?', 'whyHere'], ['What are you?', 'whatareyou']
+                ['Why are you here?', 'whyHere'], ['What are you?', 'whatYou']
             ]
         },
 
@@ -235,9 +235,79 @@ let storage = [],
         },
 
         right2: {
-            text: 'While Cynthia and Rosebud traveled through each room, they saw the general office and tried to get inside the room but saw it was key card locked. Luckily, they have a key card from the guy they stole it from and got inside. While going through the files, Cynthia sees a file about where the equipment they need is.<br><br>Suddenly, a voice overhead announces that a button contacting the alien planet has been pushed.',
+            text: '<br><br>While Cynthia and Rosebud traveled through each room, they saw the general office and tried to get inside the room but saw it was key card locked. Luckily, they have a key card from the guy they stole it from and got inside. While going through the files, Cynthia sees a file about where the equipment they need is.<br><br>Suddenly, a voice overhead announces that a button contacting the alien planet has been pushed.',
             choices: [
-                []
+                ['Greet the aliens', 'greetAlien']
+            ]
+        },
+
+        left2: {
+            text: '<br><br>Rosebud’s leader says, “Greeting earthlings, we are here because you have taken one of our own and we will take him by force if we have to.”<br><br>The world is shaking up, either the government has to prepare for war or they try to find Rosebud and make a deal.',
+            choices: [
+                ['Greet the aliens', 'greetAlien']
+            ]
+        },
+
+        greetAlien: {
+            text: '<br><br>Albert and Cynthia moved to the outside of the building where they watched an alien ship land in a nearby field. Many government officials surrounded the ship, ready to attack. Motioning to Rosebud to stay hidden, Albert and Cynthia moved towards the ship.<br><br>Rosebud’s leader says, “Greeting earthlings, we are here because you have taken one of our own and we will take him by force if we have to.”<br><br>The world is shaking up, either the government has to prepare for war or they try to find Rosebud and make a deal.',
+            choices: [
+                ['Stay back and watch', 'warEnds'] ['Speak to the leader', 'speakLeader']
+            ]
+        },
+
+        warEnds: {
+            text: '<br><br>Rosebud realizes he has to figure out how to help calm his people with Albert and Cynthia.<br><br>“Don’t you people understand you’re just making things worse?” Albert and Cynthia tried to say to the leaders, but to no avail. Meanwhile, Rosebud was explaining his situation to his leader.<br><br>“These people did not experiment on you?” Rosebud’s leader questioned, and Rosebud fervently denied something like that ever happening.<br><br>After a long discussion with Rosebud, his people decide to leave and take him back without any trouble. Rosebud and Albert tearfully shake hands again as the alien ship is loading up to be sent away. ',
+            choices: [
+                ['Good ending', 'restart']
+            ]
+        },
+        
+        speakLeader: {
+            text: '<br><br>Albert runs ahead of the crowd, slipping out of reach of the government officers trying to grab him. Panting, he says, “don’t hurt anyone! Earth can be good for you too!”<br><br>Rosebud’s Leader says, “How can Earth benefit us? Because we feel that we are just going to be used for Earth’s benefits.” <br><br>If they can’t find a way to convince the leader that Earth has things that can help change his race and make them want to stay, things could go very wrong very quickly.<br><br>Albert says that he can convince Rosebud’s leader that earth has something to offer by showing him earth has...',
+            choices: [
+                ['A good economy', 'goodEcon'], ['Advanced technology', 'advTech'], ['Strong bonds', 'bonds']
+            ]
+        },
+
+        goodEcon: {
+            text: '<br><br>Alberts tries to convince the leader by showing how humans live together on a daily basis but all the leaders see how the world is so divided and how everyone fights all the time.<br><br>The leader says, “All I see is how divided the race is and how violent you guys can get over the simplest of things.”<br><br>The leader yells, “Y’all are barbarians, me and my people want nothing to do with you.” <br><br>The leader takes Rosebud home. Before their departure, Rosebud only says goodbye to Cynthia because he thinks Albert didn’t try hard enough to keep him around and showed him what humans are really like.',
+            choices: [
+                ['Now what?', 'albertIdentity']
+            ]
+        },
+
+        albertIdentity: {
+            text: `<br><br>Due to them leaving, the government is mad about how Albert failed and they can’t risk the whole world learning of aliens. To make sure Albert doesn’t say anything, they get rid of his identity and hide him from the world.  Now the world remains the same but Albert Average is all alone and essentially doesn’t exist.`,
+            choices: [
+                ['Bad ending', 'restart']
+            ]
+        },
+
+        advTech: {
+            text: `<br><br>Albert says, “Let me show the technological wonders this planet has to offer,” and he shows them Earth vehicles but that didn’t change the leader's mind, then tries explaining how earth conducts energy for everyone. <br><br>The leader says, “This technology is such junk compared to ours, we made more advanced stuff in our stone age.”<br><br>Albert sighs and says, “Last chance.”<br><br>Albert thinks whether or not to show the files they got from the government about how they change their technology.`,
+            choices: [
+                ['Show files', 'showFiles'], [`Don't show the files`, 'showFilesFalse']
+            ]
+        },
+
+        showFiles: {
+            text: `<br><br>Alberts shows the files which caused an uproar instead of making things better.<br><br>The leader says with concern and rage, “Why are you changing our tech to make weapons?! This just shows how humans are using us for personal gain!”<br><br>The government is even more angry because Albert found their secret files without them knowing and Albert could face life in prison. The government tries to convince them that it's not what it looks like but it doesn't work and just makes things worse.<br><br>The leader is now enraged by this turn of events and decides they’re leaving immediately and Albert ends up in prison for life for stealing those files. By the time he gets out, the whole world doesn’t know what happened and now Albert has nothing left.`,
+            choices: [
+                ['Bad ending', 'restart']
+            ]
+        },
+
+        showFilesFalse: {
+            text: `<br><br>Instead of showing the files Albert decides to show artificial intelligence everyone has on their phones.<br><br>“What is this voice in this box?” The leader asked. Albert tells him that you can ask it anything and it will answer it in no time and knows how to learn from your action.<br><br>The leader is now interested in this cause his race has nothing like this, then says, “Maybe earth can benefit us with this, very well we agree to work with one another”.<br><br>Due to this, many aliens came to earth trying to join the treaty. They had to make an inter universal community that can talk to every planet out there. Everyone wanted to elect Albert and Cynthia to run the community cause they are the ones who technically started this.<br><br>Albert and Cynthia said shocked, “Why us? We just work in an old office and we don't have experience in running a community.” <br><br>Rosebud says, “You guys saved a total complete stranger and wanted to help get him home at any cost, so you guys are worthy of this role.” <br><br>They take the job and keep the peace as best as they can.`,
+            choices: [
+                ['Good ending', 'restart']
+            ] 
+        },
+
+        bonds: {
+            text: `<br><br>Albert and Rosebud show everyone about how both races can live together by telling them the journey they faced and how they worked together on fixing Rosebud’s device. “When I met Rosebud I didn't think he would bring me back to life cause before I met him I was living a boring life with no purpose,” Albert says.<br><br>“I was trying to get home without any human knowing, little did I know humans are very strange people. Most people back home wouldn’t have helped me the way Albert did,” Rosebud says<br><br>Rosebud’s leader starts crying because this friendship reminds him of the time he had with his father, “didn’t think we both have stuff in common with how we like to treat each other and how we love each other”.<br><br>The leader says with tears in his eyes, “seeing this made me realize that maybe Earth and my race can live together without any problems.”<br><br>Due to this, the peace treaty was made and everyone was living together peacefully, but later on more alien races started coming and wondering to join in on this.<br><br>Two years later, multiple alien races had made Earth their home and Earth has used their alien technology to advance their own and explore more of the galaxy. <br><br>Due to this, many aliens came to earth trying to join the treaty. They had to make an inter universal community that can talk to every planet out there. Everyone wanted to elect Albert and Cynthia to run the community cause they are the ones who technically started this.<br><br>Albert and Cynthia said shocked, “Why us? We just work in an old office and we don't have experience in running a community.” <br><br>Rosebud says, “You guys saved a total complete stranger and wanted to help get him home at any cost, so you guys are worthy of this role.” <br><br>They take the job and keep the peace as best as they can.`,
+            choices: [
+                ['Good ending', 'restart']
             ]
         },
     
